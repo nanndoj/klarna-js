@@ -3,15 +3,17 @@ import { expect } from 'chai';
 import Controller from '../src/controller';
 
 describe('Controller', () => {
-  let ctrl = new Controller();
-
+  
   it('Should be able to initialize a controller', () => {
+    let ctrl = new Controller();
     ctrl.init();
     expect(ctrl.model.rows).to.not.be.undefined;
     expect(ctrl.model.max).to.be.equal(1);
   });
 
   it('Should be able to add new boxes to existing rows', () => {
+    let ctrl = new Controller();
+    ctrl.init();
     ctrl.createBox(0,1);
     expect(ctrl.model.max).to.be.equal(2);
 
@@ -20,7 +22,11 @@ describe('Controller', () => {
   });
 
   it('Should create a new row when overflow', () => {
+    let ctrl = new Controller();
+    ctrl.init();
     ctrl.createBox(0,1);
+    ctrl.createBox(0,1);
+    ctrl.createBox(0,2);
     expect(ctrl.model.rows.length).to.be.equal(2);
     expect(ctrl.model.rows[1].capacity).to.be.equal(2);
   });
