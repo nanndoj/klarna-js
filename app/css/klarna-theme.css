@@ -7,11 +7,6 @@ body {
   background-repeat: no-repeat; }
 
 .container {
-  -webkit-transition: 0.1s ease;
-  -moz-transition: 0.1s ease;
-  -ms-transition: 0.1s ease;
-  -o-transition: 0.1s ease;
-  transition: 0.1s ease;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -27,7 +22,8 @@ body {
       border-color: #000; }
     #container1 #container2 .box {
       border-radius: 12px;
-      border-color: #CCC; }
+      border-color: #CCC;
+      cursor: pointer; }
       #container1 #container2 .box:hover {
         border-color: #000; }
       #container1 #container2 .box .box-header {

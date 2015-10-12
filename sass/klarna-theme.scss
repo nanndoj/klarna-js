@@ -48,7 +48,6 @@ body {
 }
 
 .container {
-  @include animation(.1s); 
   @include border-radius(10px);
 }
 
@@ -66,6 +65,7 @@ body {
     .box {
       border-radius: 12px;
       border-color: $default-border;
+      cursor: pointer;
 
       &:hover {
         border-color: $strong-border;
