@@ -1,0 +1,105 @@
+// Google Fonts
+@import url(../fonts/Roboto-Regular.ttf);
+
+// Variables
+$font-stack:    'Roboto Condensed', sans-serif;
+$bg-color:      #0074c9;
+$bar-color:     #EAEAEA;
+$logo:          '../img/klarna-logo.jpg';
+
+
+body {
+  font: 100% $font-stack;
+  background-color: $bg-color;
+  background-image: url($logo);
+  background-position: 0px 30px;
+  background-repeat: no-repeat;
+}
+
+@mixin animation ($duration) {
+  -webkit-transition: $duration ease;
+  -moz-transition: $duration ease;
+  -ms-transition: $duration ease;
+  -o-transition: $duration ease;
+  transition: $duration ease;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+.container {
+  @include animation(.1s); 
+  @include border-radius(10px);
+}
+
+#container1 {
+  border: none;
+
+  #container2 {
+    background-color: rgba(128,128,128,.6);
+
+    .box {
+      border-radius: 12px;
+
+      .box-header {
+        border-bottom: 1px solid #999; 
+      }
+
+      .box.second .box-header {
+        border-bottom: 1px solid #0F0; 
+      }
+    }
+  }
+}
+
+.statistics {
+  width: 100%;
+  background-color: $bar-color;
+  border-bottom: 1px solid #CECECE;
+
+  ul {
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 20px;
+    }
+
+    li.info {
+      margin-top: 10px;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+button {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    color: #fff;
+    background-color: $bg-color;
+    border-color: #46b8da;
+}
+
+.clear-button {
+  float: right;
+}
