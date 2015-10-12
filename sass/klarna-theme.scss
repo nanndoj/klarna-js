@@ -2,10 +2,25 @@
 @import url(../fonts/Roboto-Regular.ttf);
 
 // Variables
-$font-stack:    'Roboto Condensed', sans-serif;
-$bg-color:      #0074c9;
-$bar-color:     #EAEAEA;
-$logo:          '../img/klarna-logo.jpg';
+$font-stack:      'Roboto Condensed', sans-serif;
+$bg-color:        #0074c9;
+$bar-color:       #EAEAEA;
+$logo:            '../img/klarna-logo.jpg';
+
+$default-border:  #CCC;
+$strong-border:   #000;
+
+$bg-danger:       #d9534f;
+$bg-danger-hover: #c9302c;
+$border-danger:   #d43f3a;
+
+$bg-success:       #5cb85c;
+$bg-success-hover: #449d44;   
+$border-success:   #398439;
+
+$bg-primary:       #5bc0de;
+$bg-primary-hover: #31b0d5;
+$border-primary:   #269abc;
 
 
 body {
@@ -42,16 +57,64 @@ body {
 
   #container2 {
     background-color: rgba(128,128,128,.6);
+    border-color: $border-primary;
+
+    &.active {
+      border-color: $strong-border;      
+    }
 
     .box {
       border-radius: 12px;
+      border-color: $default-border;
 
-      .box-header {
-        border-bottom: 1px solid #999; 
+      &:hover {
+        border-color: $strong-border;
       }
 
-      .box.second .box-header {
-        border-bottom: 1px solid #0F0; 
+      .box-header {
+        border-bottom: 1px solid $default-border; 
+      }
+    }
+
+    .box.second {
+      color: #fff;
+      background-color: $bg-danger;
+      border-color: $border-danger;
+      &:hover {
+        background-color: $bg-danger-hover;
+        border-color: $strong-border;
+      }
+
+      .box-header {
+        border-bottom: 1px solid $border-danger; 
+      }
+    }
+
+    .box.third {
+      color: #fff;
+      background-color: $bg-success;
+      border-color: $border-success;
+      &:hover {
+        background-color: $bg-success-hover;
+        border-color: $strong-border;
+      }
+
+      .box-header {
+        border-bottom: 1px solid $border-success; 
+      }
+    }
+
+    .box.fourth {
+      color: #fff;
+      background-color: $bg-primary;
+      border-color: $border-primary;
+      &:hover {
+        background-color: $bg-primary-hover;
+        border-color: $strong-border;
+      }
+
+      .box-header {
+        border-bottom: 1px solid $bg-primary-hover; 
       }
     }
   }
@@ -80,6 +143,7 @@ body {
   }
 }
 
+
 button {
     display: inline-block;
     padding: 8px 12px;
@@ -96,8 +160,8 @@ button {
     border-radius: 4px;
 
     color: #fff;
-    background-color: $bg-color;
-    border-color: #46b8da;
+    background-color: $bg-primary;
+    border-color: $border-primary;
 }
 
 .clear-button {
