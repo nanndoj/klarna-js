@@ -3,7 +3,7 @@ body {
   font: 100% "Roboto Condensed", sans-serif;
   background-color: #0074c9;
   background-image: url("../img/klarna-logo.jpg");
-  background-position: 0px 30px;
+  background-position: 0 30px;
   background-repeat: no-repeat; }
 
 .container {
@@ -61,7 +61,7 @@ body {
   background-color: #EAEAEA;
   border-bottom: 1px solid #CECECE; }
   .statistics ul {
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 5px;
     padding-bottom: 5px; }
     .statistics ul li {
@@ -70,7 +70,7 @@ body {
       margin-right: 20px; }
     .statistics ul li.info {
       margin-top: 10px;
-      padding-bottom: 0px; }
+      padding-bottom: 0; }
 
 button {
   display: inline-block;
@@ -78,7 +78,7 @@ button {
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.42857143;
+  line-height: 1.42;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
