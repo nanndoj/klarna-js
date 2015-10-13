@@ -16,7 +16,7 @@ gulp.task('watch', ['build-scripts'], function() {
 });
 
 gulp.task('build-scripts',['test'],function () {
-  return gulp.src('./src/**/index.js')
+  return gulp.src('./src/js/index.js')
     .pipe(through2.obj(function (file, enc, next) {
       browserify(file.path)
         .transform(require('babelify'))

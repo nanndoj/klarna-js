@@ -45,7 +45,11 @@ export default class Controller {
       });
 
       // calculate the nextCapacity
-      this.model.nextSize = (this.model.rows[this.model.rows.length - 1].capacity - 1);
+      let nextSize = this.model.rows[this.model.rows.length - 1].capacity - 1;
+      if(nextSize === 0) {
+        nextSize = 3;
+      };
+      this.model.nextSize = (nextSize);
     } else {
       // Create a new Row with 3 of capacity
       let row = new Row(3);
@@ -117,7 +121,12 @@ export default class Controller {
         if(nextItems.length == 0 && nextIndex == (this.model.rows.length - 1)) {
           // Remove the last row
           this.model.rows.pop();
-          this.model.nextSize = (this.model.rows[this.model.rows.length - 1].capacity - 1);
+          
+          let nextSize = this.model.rows[this.model.rows.length - 1].capacity - 1;
+          if(nextSize === 0) {
+            nextSize = 3;
+          };
+          this.model.nextSize = (nextSize);
 
           if(this.model.nextSize === 0) {
             this.model.nextSize = 3;

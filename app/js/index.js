@@ -68,7 +68,11 @@ var Controller = (function () {
         });
 
         // calculate the nextCapacity
-        this.model.nextSize = this.model.rows[this.model.rows.length - 1].capacity - 1;
+        var nextSize = this.model.rows[this.model.rows.length - 1].capacity - 1;
+        if (nextSize === 0) {
+          nextSize = 3;
+        };
+        this.model.nextSize = nextSize;
       } else {
         // Create a new Row with 3 of capacity
         var row = new _row2['default'](3);
@@ -146,7 +150,12 @@ var Controller = (function () {
           if (nextItems.length == 0 && nextIndex == _this2.model.rows.length - 1) {
             // Remove the last row
             _this2.model.rows.pop();
-            _this2.model.nextSize = _this2.model.rows[_this2.model.rows.length - 1].capacity - 1;
+
+            var nextSize = _this2.model.rows[_this2.model.rows.length - 1].capacity - 1;
+            if (nextSize === 0) {
+              nextSize = 3;
+            };
+            _this2.model.nextSize = nextSize;
 
             if (_this2.model.nextSize === 0) {
               _this2.model.nextSize = 3;
