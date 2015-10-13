@@ -10,6 +10,8 @@ $logo:            '../img/klarna-logo.jpg';
 $default-border:  #CCC;
 $strong-border:   #000;
 
+$text-highlight:  #fff;
+
 $bg-danger:       #d9534f;
 $bg-danger-hover: #c9302c;
 $border-danger:   #d43f3a;
@@ -76,7 +78,7 @@ body {
       }
 
       &.second {
-        color: #fff;
+        color: $text-highlight;
         background-color: $bg-danger;
         border-color: $border-danger;
         &:hover {
@@ -90,7 +92,7 @@ body {
       }
 
       &.third {
-        color: #fff;
+        color: $text-highlight;
         background-color: $bg-success;
         border-color: $border-success;
         &:hover {
@@ -104,7 +106,7 @@ body {
       }
 
       &.fourth {
-        color: #fff;
+        color: $text-highlight;
         background-color: $bg-primary;
         border-color: $border-primary;
         &:hover {
@@ -159,7 +161,7 @@ button {
     border: 1px solid transparent;
     border-radius: 4px;
 
-    color: #fff;
+    color: $text-highlight;
     background-color: $bg-primary;
     border-color: $border-primary;
 }
