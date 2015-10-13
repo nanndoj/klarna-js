@@ -14,7 +14,7 @@ npm install
 
 To build and run:
 ```shell
-npm build
+npm run-script build
 ```
 
 The main file is `app/index.html`:
