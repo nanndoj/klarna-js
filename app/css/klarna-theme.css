@@ -28,33 +28,33 @@ body {
         border-color: #000; }
       #container1 #container2 .box .box-header {
         border-bottom: 1px solid #CCC; }
-    #container1 #container2 .box.second {
-      color: #fff;
-      background-color: #d9534f;
-      border-color: #d43f3a; }
-      #container1 #container2 .box.second:hover {
-        background-color: #c9302c;
-        border-color: #000; }
-      #container1 #container2 .box.second .box-header {
-        border-bottom: 1px solid #d43f3a; }
-    #container1 #container2 .box.third {
-      color: #fff;
-      background-color: #5cb85c;
-      border-color: #398439; }
-      #container1 #container2 .box.third:hover {
-        background-color: #449d44;
-        border-color: #000; }
-      #container1 #container2 .box.third .box-header {
-        border-bottom: 1px solid #398439; }
-    #container1 #container2 .box.fourth {
-      color: #fff;
-      background-color: #5bc0de;
-      border-color: #269abc; }
-      #container1 #container2 .box.fourth:hover {
-        background-color: #31b0d5;
-        border-color: #000; }
-      #container1 #container2 .box.fourth .box-header {
-        border-bottom: 1px solid #31b0d5; }
+      #container1 #container2 .box.second {
+        color: #fff;
+        background-color: #d9534f;
+        border-color: #d43f3a; }
+        #container1 #container2 .box.second:hover {
+          background-color: #c9302c;
+          border-color: #000; }
+        #container1 #container2 .box.second .box-header {
+          border-bottom: 1px solid #d43f3a; }
+      #container1 #container2 .box.third {
+        color: #fff;
+        background-color: #5cb85c;
+        border-color: #398439; }
+        #container1 #container2 .box.third:hover {
+          background-color: #449d44;
+          border-color: #000; }
+        #container1 #container2 .box.third .box-header {
+          border-bottom: 1px solid #398439; }
+      #container1 #container2 .box.fourth {
+        color: #fff;
+        background-color: #5bc0de;
+        border-color: #269abc; }
+        #container1 #container2 .box.fourth:hover {
+          background-color: #31b0d5;
+          border-color: #000; }
+        #container1 #container2 .box.fourth .box-header {
+          border-bottom: 1px solid #31b0d5; }
 
 .statistics {
   width: 100%;
