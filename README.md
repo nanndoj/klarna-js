@@ -12,7 +12,6 @@ You can install the project dependences with `npm`.
 npm install
 ```
 
-To build and run:
 ```shell
 npm run-script build
 ```
