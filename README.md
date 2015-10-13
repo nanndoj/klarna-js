@@ -17,6 +17,11 @@ To build and run:
 npm run-script build
 ```
 
+To build and start watching for changes:
+```shell
+npm start
+```
+
 The main file is `app/index.html`:
 
 ## Additional info
