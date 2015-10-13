@@ -15,8 +15,6 @@ gulp.task('watch', ['build-scripts'], function() {
   gulp.watch('./src/**/*.js', ['test','build-scripts']);
 });
 
-gulp.task('default', ['watch','sass:watch']);
-
 gulp.task('build-scripts',['test'],function () {
   return gulp.src('./src/index.js')
     .pipe(through2.obj(function (file, enc, next) {
@@ -63,3 +61,7 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
+
+
+// Default task
+gulp.task('default', ['watch','sass:watch']);

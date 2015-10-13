@@ -16,7 +16,7 @@ var _row = require('./row');
 var _row2 = _interopRequireDefault(_row);
 
 /**
- * This class represents a fluibox controller  
+ * This class represents a fluidbox controller
  * the main point between models and views.
  * This class stores all logic between our model
  * and views
@@ -50,6 +50,11 @@ var Controller = (function () {
       // try to get the storage if exist
       var storage = undefined;
       try {
+        /**
+        * We use local storage here to meet a requirement
+        * where the user should be able to restore the layout
+        * even if the browser was closed
+        */
         storage = window.localStorage;
       } catch (ex) {
         storage = {};

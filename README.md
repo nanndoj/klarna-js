@@ -1,12 +1,12 @@
 # Klarna FluidBox Javascript assignment
 
-To install just clone this repository or download as zip file.
+To install, first clone this repository or download as a zip file
 
 ## Install
 
 You can install the project dependences with `npm`.
 
-### bower
+### npm
 
 ```shell
 npm install
@@ -14,7 +14,7 @@ npm install
 
 To build and run:
 ```shell
-npm start
+npm build
 ```
 
 The main file is `app/index.html`:

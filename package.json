@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register",
-    "start": "gulp default"
+    "start": "gulp default",
+    "build": "gulp build-scripts"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
     "babelify": "^6.3.0",
     "browserify": "^11.2.0",
     "chai": "^3.3.0",

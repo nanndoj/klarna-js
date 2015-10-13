@@ -4,7 +4,7 @@ import Row from '../src/row';
 
 describe('Row', () => {
 
-  it('Should be able initialize rows with a set of boxes', () => {
+  it('Should be able to initialize rows with a set of boxes', () => {
     let row = new Row(3, [1,2,3]);
     expect(row.items.length).to.be.equal(3);
 
@@ -25,7 +25,7 @@ describe('Row', () => {
     expect(row.items.length).to.be.equal(3);
   });
 
-  it('Should not allow exceed the row capacity', () => {
+  it('Should not allow to exceed the row capacity', () => {
     let row = new Row(3);
     row.createBox(1);
     row.createBox(2,1);
