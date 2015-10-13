@@ -1,6 +1,6 @@
 import { describe, it } from 'mocha';
 import { expect } from 'chai';
-import Row from '../src/row';
+import Row from '../src/js/row';
 
 describe('Row', () => {
 

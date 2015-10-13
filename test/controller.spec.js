@@ -1,6 +1,6 @@
 import { describe, it } from 'mocha';
 import { expect } from 'chai';
-import Controller from '../src/controller';
+import Controller from '../src/js/controller';
 
 describe('Controller', () => {
   

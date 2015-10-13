@@ -16,7 +16,7 @@ gulp.task('watch', ['build-scripts'], function() {
 });
 
 gulp.task('build-scripts',['test'],function () {
-  return gulp.src('./src/index.js')
+  return gulp.src('./src/**/index.js')
     .pipe(through2.obj(function (file, enc, next) {
       browserify(file.path)
         .transform(require('babelify'))
@@ -53,13 +53,13 @@ gulp.task('lint', ['sass'], function () {
 });
 
 gulp.task('sass', function () {
-  gulp.src('./sass/**/*.scss')
+  gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./app/css'));
 });
  
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./src/sass/**/*.scss', ['sass']);
 });
 
 
